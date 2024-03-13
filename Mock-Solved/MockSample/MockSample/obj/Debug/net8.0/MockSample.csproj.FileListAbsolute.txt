@@ -1,0 +1,17 @@
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/bin/Debug/net8.0/MockSample
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/bin/Debug/net8.0/MockSample.deps.json
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/bin/Debug/net8.0/MockSample.runtimeconfig.json
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/bin/Debug/net8.0/MockSample.dll
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/bin/Debug/net8.0/MockSample.pdb
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/MockSample.csproj.AssemblyReference.cache
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/MockSample.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/MockSample.AssemblyInfoInputs.cache
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/MockSample.AssemblyInfo.cs
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/MockSample.csproj.CoreCompileInputs.cache
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/MockSample.csproj.CopyComplete
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/MockSample.dll
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/refint/MockSample.dll
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/MockSample.pdb
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/MockSample.genruntimeconfig.cache
+/Users/sardor/Documents/BIS/SQPT/In-Class/MockSample/MockSample/obj/Debug/net8.0/ref/MockSample.dll

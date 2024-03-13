@@ -1,0 +1,22 @@
+[
+  {
+    "Id": "b2e6c672-7db8-44bb-806d-1c0dbc9cbb69",
+    "Name": "Classic Spaghetti Carbonara",
+    "Description": "A quick and easy Italian pasta dish using eggs, cheese, bacon, and black pepper to create a creamy sauce."
+  },
+  {
+    "Id": "9879f0e2-28d6-4ec3-8c58-0bb6771fc109",
+    "Name": "Vegetarian Chili",
+    "Description": "A hearty, filling dish with beans, vegetables, and spices, simmered to perfection."
+  },
+  {
+    "Id": "adcf0e9e-ba37-4b57-af4e-31825e8326e0",
+    "Name": "Banana Bread",
+    "Description": "Moist and delicious bread made with overripe bananas, flour, butter, and sugar, perfect for breakfast or a snack."
+  },
+  {
+    "Id": "b3ae0fea-2ec0-487a-8897-f0c22aad24df",
+    "Name": "Plov",
+    "Description": "Carrot put mix with oil and meat, stem it"
+  }
+]
