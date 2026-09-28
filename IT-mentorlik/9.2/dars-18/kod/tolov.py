@@ -20,7 +20,7 @@ class TolovProvayderi(ABC):
         if not self._api_sorov(jami):
             raise RuntimeError(f"{self.nom}: to'lov rad etildi")
         tid = f"{self.nom[:3].upper()}-{uuid.uuid4().hex[:8]}"
-        print(f"✅ {self.nom}: {jami:,} so'm to'landi (komissiya {self.komissiya:.0%}). ID: {tid}")
+        print(f"✅ {self.nom}: {jami:,} so'm to'landi (komissiya {self.komissiya:.1%}). ID: {tid}")
         return tid
 
 
