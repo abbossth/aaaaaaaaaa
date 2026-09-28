@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma elementlari vitrinasi</title>
+</head>
+<body>
+  <h1>Forma elementlari vitrinasi</h1>
+  <form>
+    <p><label for="t">Matn:</label> <input type="text" id="t" placeholder="Ismingiz"></p>
+    <p><label for="e">Email:</label> <input type="email" id="e" placeholder="aziz@mail.uz"></p>
+    <p><label for="p">Parol:</label> <input type="password" id="p"></p>
+    <p><label for="n">Yosh:</label> <input type="number" id="n" min="10" max="18"></p>
+    <p><label for="tel">Telefon:</label> <input type="tel" id="tel" placeholder="+998 90 123 45 67"></p>
+    <p><label for="d">Tug'ilgan sana:</label> <input type="date" id="d"></p>
+    <p><label for="c">Sevimli rang:</label> <input type="color" id="c" value="#3b5bdb"></p>
+    <p><label for="r">Dasturlashni qanchalik yoqtirasiz (1–10):</label> <input type="range" id="r" min="1" max="10"></p>
+    <p><label for="f">Rasm yuklash:</label> <input type="file" id="f"></p>
+
+    <p>Jins:
+      <input type="radio" id="ogil" name="jins"><label for="ogil">O'g'il</label>
+      <input type="radio" id="qiz" name="jins"><label for="qiz">Qiz</label>
+    </p>
+
+    <p>Qiziqishlar:
+      <input type="checkbox" id="q1" checked><label for="q1">Dasturlash</label>
+      <input type="checkbox" id="q2"><label for="q2">Sport</label>
+      <input type="checkbox" id="q3"><label for="q3">Musiqa</label>
+    </p>
+
+    <p><label for="s">Sinf:</label>
+      <select id="s">
+        <option>8.10</option><option>8.2</option><option>9.2</option>
+      </select>
+    </p>
+
+    <p><label for="izoh">Izoh:</label><br><textarea id="izoh" rows="4" cols="40"></textarea></p>
+
+    <button type="submit">Yuborish</button>
+    <button type="reset">Tozalash</button>
+  </form>
+</body>
+</html>
