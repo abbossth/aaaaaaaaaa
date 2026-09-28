@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS animatsiyalar</title>
+  <style>
+    body { font-family: system-ui; display: flex; flex-wrap: wrap; gap: 40px; padding: 40px; background: #212529; color: #fff; }
+
+    /* 1. Hover kartochka */
+    .card { width: 200px; padding: 20px; background: #343a40; border-radius: 16px; transition: transform .3s, box-shadow .3s; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,.5); }
+
+    /* 2. Pulsatsiya qiluvchi tugma */
+    .btn { padding: 16px 32px; background: #e64980; border: 0; border-radius: 50px; color: #fff; font-size: 18px; animation: puls 1.5s infinite; cursor: pointer; }
+    @keyframes puls { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+
+    /* 3. Loader */
+    .loader { width: 50px; height: 50px; border: 6px solid #495057; border-top-color: #4dabf7; border-radius: 50%; animation: aylan 1s linear infinite; }
+    @keyframes aylan { to { transform: rotate(360deg); } }
+
+    /* 4. Sakrovchi to'p */
+    .top { width: 40px; height: 40px; background: #fcc419; border-radius: 50%; animation: sakra .6s ease-in infinite alternate; }
+    @keyframes sakra { to { transform: translateY(-80px); } }
+
+    /* 5. Paydo bo'luvchi matn */
+    .fade { animation: paydo 2s ease forwards; opacity: 0; }
+    @keyframes paydo { to { opacity: 1; transform: translateX(20px); } }
+  </style>
+</head>
+<body>
+  <div class="card"><h3>Hover qiling</h3><p>Men ko'tarilaman!</p></div>
+  <button class="btn">Bos meni</button>
+  <div class="loader"></div>
+  <div class="top"></div>
+  <h2 class="fade">Salom, animatsiya!</h2>
+</body>
+</html>

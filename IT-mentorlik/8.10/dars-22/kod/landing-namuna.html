@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeKids — IT to'garak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --asosiy: #5f3dc4; --urg: #fcc419; --fon: #f8f9fa; --matn: #212529; }
+    * { box-sizing: border-box; margin: 0; }
+    body { font-family: "Poppins", sans-serif; color: var(--matn); background: var(--fon); }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+    header .container { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+    .logo { font-weight: 700; font-size: 24px; color: var(--asosiy); }
+    nav { display: flex; gap: 32px; }
+    nav a { color: var(--matn); text-decoration: none; }
+
+    .hero .container { display: flex; align-items: center; gap: 48px; padding: 64px 24px; }
+    .hero h1 { font-size: 48px; line-height: 1.2; margin-bottom: 16px; }
+    .hero p { margin-bottom: 32px; color: #495057; }
+    .btn { display: inline-block; padding: 16px 32px; background: var(--asosiy); color: #fff; border-radius: 12px; text-decoration: none; font-weight: 600; }
+    .hero img { width: 480px; max-width: 100%; border-radius: 24px; }
+
+    .features .container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 64px 24px; }
+    .card { background: #fff; padding: 32px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+    .card .icon { font-size: 40px; margin-bottom: 16px; }
+
+    footer { background: var(--asosiy); color: #fff; text-align: center; padding: 24px; }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hero .container { flex-direction: column; text-align: center; }
+      .hero h1 { font-size: 32px; }
+      .features .container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header><div class="container"><span class="logo">CodeKids</span>
+    <nav><a href="#">Kurslar</a><a href="#">Mentorlar</a><a href="#">Aloqa</a></nav></div></header>
+
+  <section class="hero"><div class="container">
+    <div>
+      <h1>Kelajak kasbini bugun o'rgan!</h1>
+      <p>Maktabimizning IT to'garagida sayt, o'yin va Telegram bot yaratishni o'rganing.</p>
+      <a class="btn" href="#">Ro'yxatdan o'tish</a>
+    </div>
+    <img src="https://picsum.photos/480/360" alt="Dasturlash">
+  </div></section>
+
+  <section class="features"><div class="container">
+    <div class="card"><div class="icon">🌐</div><h3>Web</h3><p>HTML, CSS, JavaScript bilan zamonaviy saytlar.</p></div>
+    <div class="card"><div class="icon">🐍</div><h3>Python</h3><p>Back-end va Telegram botlar yaratish.</p></div>
+    <div class="card"><div class="icon">🚀</div><h3>Startap</h3><p>G'oyadan real mahsulotgacha.</p></div>
+  </div></section>
+
+  <footer>© 2026 CodeKids · 8.2 guruhi</footer>
+</body>
+</html>
