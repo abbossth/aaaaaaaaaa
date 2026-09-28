@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM sehrgari 🪄</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; transition: background .4s; }
+    .karta { border: 2px solid #ddd; border-radius: 16px; padding: 20px; text-align: center; }
+    .karta img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
+    .yulduz { color: gold; font-size: 24px; }
+    #royxat li { padding: 6px; }
+    .yangi { background: #e8f5e9; border-radius: 8px; }
+    button { padding: 10px 16px; border: none; border-radius: 10px; background: #4f46e5; color: #fff; cursor: pointer; margin: 4px; }
+  </style>
+</head>
+<body>
+  <h1 id="sarlavha">DOM sehrgari 🪄</h1>
+  <p class="matn">Bu matnni JavaScript o'zgartiradi.</p>
+
+  <div class="karta">
+    <img id="rasm" src="https://cataas.com/cat" alt="Mushuk">
+    <h2 id="ism">Ism Familiya</h2>
+    <p id="kasb">Kasb</p>
+    <div class="yulduz" id="yulduzlar"></div>
+  </div>
+
+  <h3>Sevimli o'yinlarim</h3>
+  <ul id="royxat"></ul>
+
+  <button onclick="sehr()">🪄 Sehr!</button>
+
+  <script src="app.js"></script>
+</body>
+</html>

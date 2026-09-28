@@ -1,0 +1,13 @@
+:root { --fon: #ffffff; --matn: #1f2937; --blok: #f3f4f6; }
+body.qorongi { --fon: #111827; --matn: #f9fafb; --blok: #1f2937; }
+body { font-family: system-ui, sans-serif; background: var(--fon); color: var(--matn); max-width: 640px; margin: 0 auto; padding: 24px 16px; transition: background .3s, color .3s; }
+.blok { background: var(--blok); border-radius: 16px; padding: 16px; margin: 16px 0; position: relative; min-height: 60px; }
+.son { font-size: 64px; font-weight: 800; transition: transform .1s; }
+.son.manfiy { color: #ef4444; }
+.son.katta { color: #22c55e; }
+button { font-size: 20px; padding: 8px 18px; border: none; border-radius: 10px; background: #4f46e5; color: #fff; cursor: pointer; }
+button:active { transform: scale(.95); }
+.rejim { position: fixed; top: 16px; right: 16px; }
+input { font-size: 18px; padding: 8px; border-radius: 8px; border: 2px solid #ccc; width: 100%; box-sizing: border-box; }
+kbd { background: #4f46e5; color: #fff; padding: 4px 10px; border-radius: 6px; font-size: 20px; }
+.kvadrat { width: 40px; height: 40px; background: #f59e0b; border-radius: 8px; position: relative; left: 0; top: 0; margin: 12px 0; transition: left .1s, top .1s; }

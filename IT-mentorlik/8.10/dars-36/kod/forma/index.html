@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ro'yxatdan o'tish</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 420px; margin: 40px auto; padding: 0 16px; }
+    label { display: block; margin-top: 12px; font-weight: 600; }
+    input { width: 100%; padding: 10px; border: 2px solid #d1d5db; border-radius: 8px; box-sizing: border-box; font-size: 16px; }
+    input.xato { border-color: #ef4444; }
+    input.togri { border-color: #22c55e; }
+    .xabar { color: #ef4444; font-size: 14px; min-height: 18px; }
+    button { margin-top: 16px; width: 100%; padding: 12px; font-size: 18px; border: none; border-radius: 8px; background: #4f46e5; color: #fff; }
+    #natija { margin-top: 16px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>📝 To'garakka yozilish</h1>
+  <form id="forma" novalidate>
+    <label for="ism">Ism</label>
+    <input id="ism">
+    <div class="xabar" id="ism-xabar"></div>
+
+    <label for="yosh">Yosh</label>
+    <input id="yosh" type="number">
+    <div class="xabar" id="yosh-xabar"></div>
+
+    <label for="telefon">Telefon (+998...)</label>
+    <input id="telefon" placeholder="+998901234567">
+    <div class="xabar" id="telefon-xabar"></div>
+
+    <label for="parol">Parol</label>
+    <input id="parol" type="password">
+    <div class="xabar" id="parol-xabar"></div>
+
+    <button type="submit">Yuborish</button>
+  </form>
+  <div id="natija"></div>
+  <script src="app.js"></script>
+</body>
+</html>

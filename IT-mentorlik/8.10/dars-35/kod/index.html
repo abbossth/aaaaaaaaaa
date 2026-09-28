@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventlar laboratoriyasi ⚡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="rejim" class="rejim">🌙</button>
+  <h1>Eventlar laboratoriyasi ⚡</h1>
+
+  <section class="blok">
+    <h2>1. Hisoblagich</h2>
+    <div id="son" class="son">0</div>
+    <button id="minus">−</button>
+    <button id="nol">0</button>
+    <button id="plus">+</button>
+  </section>
+
+  <section class="blok">
+    <h2>2. Jonli matn</h2>
+    <input id="kirish" placeholder="Ismingizni yozing..." maxlength="20">
+    <p>Salom, <b id="salom">mehmon</b>! <small id="belgi">0/20</small></p>
+  </section>
+
+  <section class="blok">
+    <h2>3. Klaviatura</h2>
+    <p>Istalgan tugmani bosing: <kbd id="tugma">?</kbd></p>
+    <div id="kvadrat" class="kvadrat"></div>
+    <small>⬅️ ➡️ ⬆️ ⬇️ strelkalar bilan kvadratni yurgizing</small>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
