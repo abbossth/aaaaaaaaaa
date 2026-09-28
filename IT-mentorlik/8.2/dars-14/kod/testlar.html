@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head><meta charset="UTF-8"><title>Funksiya fabrikasi</title>
+<style>body{font-family:monospace;font-size:18px;padding:20px}.ok{color:green}.no{color:red}</style></head>
+<body>
+<h1>🏭 Funksiya fabrikasi</h1>
+<div id="natija"></div>
+<script>
+// ====== FUNKSIYALARNI SHU YERGA YOZING ======
+const kvadrat = (x) => {};
+const ortacha = (a, b, c) => {};
+const katta = (a, b) => {};
+const harflarSoni = (soz) => {};
+const bahoToifa = (ball) => {}; // 86+ "a'lo", 71+ "yaxshi", 56+ "qoniqarli", qolgani "qoniqarsiz"
+const teskariSoz = (soz) => {};
+const unlilar = (matn) => {};   // a e i o u soni (katta-kichik farqsiz)
+
+// ====== TESTLAR (tegmang!) ======
+const testlar = [
+  ["kvadrat(4) === 16", () => kvadrat(4) === 16],
+  ["ortacha(3, 4, 5) === 4", () => ortacha(3, 4, 5) === 4],
+  ["katta(7, 3) === 7", () => katta(7, 3) === 7],
+  ["katta(-1, -5) === -1", () => katta(-1, -5) === -1],
+  ["harflarSoni('salom') === 5", () => harflarSoni("salom") === 5],
+  ["bahoToifa(90) === \"a'lo\"", () => bahoToifa(90) === "a'lo"],
+  ["bahoToifa(71) === 'yaxshi'", () => bahoToifa(71) === "yaxshi"],
+  ["bahoToifa(10) === 'qoniqarsiz'", () => bahoToifa(10) === "qoniqarsiz"],
+  ["teskariSoz('olma') === 'amlo'", () => teskariSoz("olma") === "amlo"],
+  ["unlilar('Salom Dunyo') === 4", () => unlilar("Salom Dunyo") === 4],
+];
+let html = "", otdi = 0;
+for (const [nom, fn] of testlar) {
+  let ok = false;
+  try { ok = fn(); } catch (e) { ok = false; }
+  if (ok) otdi++;
+  html += `<p class="${ok ? "ok" : "no"}">${ok ? "✅" : "❌"} ${nom}</p>`;
+}
+html += `<h2>${otdi} / ${testlar.length} ${otdi === testlar.length ? "🎉 HAMMASI O'TDI!" : ""}</h2>`;
+document.getElementById("natija").innerHTML = html;
+</script>
+</body>
+</html>
