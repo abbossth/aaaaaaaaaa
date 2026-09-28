@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui; background: #f1f3f5; }
+header, footer { text-align: center; padding: 16px; background: #5f3dc4; color: white; }
+main { max-width: 1000px; margin: 0 auto; padding: 20px; }
+.panel { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 16px; }
+input, button { padding: 10px; border-radius: 8px; border: 1px solid #ced4da; }
+button { background: #5f3dc4; color: white; border: 0; cursor: pointer; }
+.xato { color: #e03131; width: 100%; margin: 0; }
+.royxat { display: grid; grid-template-columns: 1fr; gap: 16px; }
+.karta { background: white; border-radius: 14px; padding: 16px; box-shadow: 0 4px 12px rgba(0,0,0,.08); transition: transform .2s; }
+.karta:hover { transform: translateY(-6px); }
+@media (min-width: 768px) { .royxat { grid-template-columns: repeat(3, 1fr); } }
