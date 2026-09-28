@@ -1,0 +1,12 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Terminal uchun oddiy To-Do dasturi",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}

@@ -1,6 +1,6 @@
 #!/bin/bash
 # "Git vaqt mashinasi" challenge uchun repo yaratadi. Git Bash'da ishga tushiring: bash challenge-setup.sh
-mkdir vaqt-mashinasi && cd vaqt-mashinasi && git init -q
+mkdir vaqt-mashinasi && cd vaqt-mashinasi && git init -q -b main
 git config user.name "Mentor"; git config user.email "mentor@maktab.uz"
 echo "<h1>Salom</h1>" > index.html; git add .; git commit -qm "Loyiha boshlandi"
 echo "body{}" > style.css; git add .; git commit -qm "Stil fayli"
