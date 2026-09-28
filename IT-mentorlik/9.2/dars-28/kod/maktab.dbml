@@ -1,0 +1,40 @@
+// dbdiagram.io ga nusxalang: https://dbdiagram.io/d
+Table sinflar {
+  id integer [pk, increment]
+  nom varchar(10) [not null, unique, note: '9.2, 9.3...']
+  rahbar_id integer [ref: > oqituvchilar.id]
+}
+
+Table talabalar {
+  id integer [pk, increment]
+  ism varchar(100) [not null]
+  tugilgan_sana date
+  sinf_id integer [ref: > sinflar.id]
+  telegram_id bigint [unique]
+}
+
+Table oqituvchilar {
+  id integer [pk, increment]
+  ism varchar(100) [not null]
+  fan varchar(50)
+}
+
+Table togaraklar {
+  id integer [pk, increment]
+  nom varchar(50) [not null]
+}
+
+Table azolik {
+  talaba_id integer [ref: > talabalar.id]
+  togarak_id integer [ref: > togaraklar.id]
+  sana date
+  indexes { (talaba_id, togarak_id) [pk] }
+}
+
+Table baholar {
+  id integer [pk, increment]
+  talaba_id integer [ref: > talabalar.id]
+  fan varchar(50)
+  baho smallint [note: '2..5']
+  sana date
+}
