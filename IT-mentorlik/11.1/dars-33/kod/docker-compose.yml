@@ -1,0 +1,42 @@
+# 33-dars: MVP stack — Express server + PostgreSQL + Adminer
+# Ishga tushirish:  docker compose up -d --build
+# Tekshirish:       curl localhost:3000/api/health  |  Adminer: http://localhost:8081
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mvp
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-maxfiy123}
+      POSTGRES_DB: mvp
+    volumes:
+      - pgdata:/var/lib/postgresql/data     # named volume — ma'lumot saqlanadi
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mvp -d mvp"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    # ports yo'q: baza tashqaridan ochiq emas, faqat ichki tarmoqda
+
+  server:
+    build: ./server
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      DATABASE_URL: postgres://mvp:${DB_PASSWORD:-maxfiy123}@db:5432/mvp   # "db" = xizmat nomi = DNS nomi
+    ports:
+      - "3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy          # baza tayyor bo'lguncha kutadi
+
+  adminer:
+    image: adminer
+    ports:
+      - "8081:8080"
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
