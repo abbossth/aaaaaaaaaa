@@ -16,7 +16,7 @@ Yechimlar qisqalik uchun emas, **tushunarlilik** uchun yozilgan. Rang kodlarini 
 ```
 Qisqaroq g'oya: bitta div + `box-shadow` bilan 3 ta nusxa.
 
-## #4 Push Button
+## #3 Push Button
 G'oya: markazda katta oval (to'rtburchak + `border-radius`), uning ichida ikkita doira (tashqi halqa va ichki tugma). `display: grid; place-items: center;` bilan markazlash.
 
 ## #5 Acid Rain

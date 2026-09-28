@@ -6,7 +6,7 @@
 | Raund | Vaqt | Target | Qiyinlik |
 |---|---|---|---|
 | 1 | 7 daq | Battle #1 → **#2 Carrom** | ⭐ |
-| 2 | 8 daq | Battle #1 → **#4 Push Button** | ⭐⭐ |
+| 2 | 8 daq | Battle #1 → **#3 Push Button** | ⭐⭐ |
 | 3 | 10 daq | Battle #1 → **#5 Acid Rain** | ⭐⭐ |
 | 4 | 12 daq | Battle #1 → **#7 Leafy Trail** | ⭐⭐⭐ |
 
