@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: system-ui, sans-serif; background: linear-gradient(135deg, #667eea, #764ba2); }
+.app { width: min(480px, 92vw); background: white; padding: 24px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,.2); }
+h1 { margin-top: 0; }
+form { display: flex; gap: 8px; }
+input { flex: 1; padding: 12px; border: 2px solid #dee2e6; border-radius: 10px; font-size: 16px; }
+input:focus { outline: none; border-color: #7048e8; }
+button { padding: 10px 14px; border: 0; border-radius: 10px; background: #7048e8; color: white; cursor: pointer; }
+.xato { color: #fa5252; min-height: 1.2em; margin: 6px 0; }
+.filtrlar { display: flex; gap: 6px; margin-bottom: 10px; }
+.filtrlar button { background: #f1f3f5; color: #495057; }
+.filtrlar button.faol { background: #7048e8; color: white; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { display: flex; align-items: center; gap: 10px; padding: 10px; border-bottom: 1px solid #f1f3f5; }
+li .matn { flex: 1; cursor: pointer; }
+li.bajarildi .matn { text-decoration: line-through; color: #adb5bd; }
+li .delete { background: transparent; color: #fa5252; font-size: 18px; }
+footer { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; color: #868e96; }
+footer button { background: transparent; color: #868e96; }

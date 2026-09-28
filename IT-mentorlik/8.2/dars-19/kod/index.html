@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>✅ Vazifalarim</h1>
+    <form id="forma">
+      <input id="matn" placeholder="Yangi vazifa..." autocomplete="off">
+      <button>Qo'shish</button>
+    </form>
+    <p id="xato" class="xato"></p>
+
+    <div class="filtrlar">
+      <button data-filtr="hammasi" class="faol">Hammasi</button>
+      <button data-filtr="faol">Faol</button>
+      <button data-filtr="bajarilgan">Bajarilgan</button>
+    </div>
+
+    <ul id="royxat"></ul>
+    <footer><span id="hisob"></span><button id="tozala">Bajarilganlarni o'chirish</button></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

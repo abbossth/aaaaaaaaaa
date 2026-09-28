@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ob-havo</title>
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: system-ui; background: linear-gradient(160deg, #4dabf7, #1864ab); color: white; }
+    .app { width: min(420px, 92vw); text-align: center; }
+    select, button { padding: 10px 14px; border-radius: 10px; border: 0; font-size: 16px; }
+    .harorat { font-size: 72px; font-weight: 700; margin: 10px 0; }
+    .kunlar { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 8px; margin-top: 20px; }
+    .kun { background: rgba(255,255,255,.15); border-radius: 12px; padding: 10px; }
+    .xato { color: #ffe3e3; }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <h1>🌤 Ob-havo</h1>
+    <select id="shahar">
+      <option value="41.31,69.28">Toshkent</option>
+      <option value="39.65,66.96">Samarqand</option>
+      <option value="39.77,64.42">Buxoro</option>
+      <option value="40.78,72.34">Andijon</option>
+      <option value="41.55,60.63">Urganch</option>
+    </select>
+    <div id="natija"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
