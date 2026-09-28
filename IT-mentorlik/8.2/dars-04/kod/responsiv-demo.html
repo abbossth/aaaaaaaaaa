@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsiv demo</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    body { font-family: system-ui, sans-serif; background: #f1f3f5; }
+
+    header { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #1c7ed6; color: #fff; }
+    nav { display: none; gap: 1rem; }
+    nav a { color: #fff; text-decoration: none; }
+    .burger { font-size: 1.5rem; background: none; border: 0; color: #fff; }
+
+    .hero { padding: 3rem 1rem; text-align: center; }
+    .hero h1 { font-size: 1.8rem; }
+
+    .cards { display: grid; grid-template-columns: 1fr; gap: 1rem; padding: 1rem; max-width: 1200px; margin: 0 auto; }
+    .card { background: #fff; border-radius: 12px; padding: 1rem; }
+    .card img { max-width: 100%; border-radius: 8px; }
+
+    @media (min-width: 768px) {
+      nav { display: flex; }
+      .burger { display: none; }
+      .hero h1 { font-size: 2.5rem; }
+      .cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1200px) {
+      .hero h1 { font-size: 3.5rem; }
+      .cards { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>TechShop</strong>
+    <nav><a href="#">Bosh sahifa</a><a href="#">Mahsulotlar</a><a href="#">Aloqa</a></nav>
+    <button class="burger">☰</button>
+  </header>
+  <section class="hero"><h1>Eng yaxshi gadjetlar</h1><p>Ekran o'lchamini o'zgartirib ko'ring!</p></section>
+  <main class="cards">
+    <div class="card"><img src="https://picsum.photos/400/250?1" alt=""><h3>Noutbuk</h3><p>12 000 000 so'm</p></div>
+    <div class="card"><img src="https://picsum.photos/400/250?2" alt=""><h3>Telefon</h3><p>6 500 000 so'm</p></div>
+    <div class="card"><img src="https://picsum.photos/400/250?3" alt=""><h3>Quloqchin</h3><p>900 000 so'm</p></div>
+    <div class="card"><img src="https://picsum.photos/400/250?4" alt=""><h3>Soat</h3><p>2 300 000 so'm</p></div>
+    <div class="card"><img src="https://picsum.photos/400/250?5" alt=""><h3>Planshet</h3><p>5 100 000 so'm</p></div>
+    <div class="card"><img src="https://picsum.photos/400/250?6" alt=""><h3>Kamera</h3><p>8 000 000 so'm</p></div>
+  </main>
+</body>
+</html>
