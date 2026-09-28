@@ -1,0 +1,19 @@
+:root { --asosiy: #2b8a3e; --urgu: #fab005; --fon: #f8f9fa; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Poppins", sans-serif; background: var(--fon); }
+header { position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: var(--asosiy); color: white; }
+nav a { color: white; margin-left: 16px; text-decoration: none; }
+main { max-width: 1000px; margin: 0 auto; padding: 20px; }
+img { max-width: 100%; border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { padding: 10px; border: 1px solid #dee2e6; }
+th { background: var(--asosiy); color: white; }
+.kartalar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+.karta { background: white; padding: 16px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.08); transition: transform .2s; }
+.karta:hover { transform: translateY(-6px); }
+form { display: flex; flex-direction: column; gap: 8px; max-width: 360px; }
+input { padding: 8px; border: 1px solid #ced4da; border-radius: 8px; }
+button { padding: 10px; background: var(--urgu); border: 0; border-radius: 8px; cursor: pointer; transition: transform .2s; }
+button:hover { transform: scale(1.05); }
+footer { text-align: center; padding: 16px; background: #212529; color: white; }
+@media (max-width: 700px) { .kartalar { grid-template-columns: 1fr; } header { flex-direction: column; gap: 8px; } }
