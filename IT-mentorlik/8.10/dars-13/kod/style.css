@@ -1,0 +1,38 @@
+/* 1. Umumiy */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+/* 2. Sarlavhalar */
+h1 {
+  color: #5f3dc4;
+  font-size: 42px;
+  text-align: center;
+}
+
+h2 {
+  color: #1c7ed6;
+  border-bottom: 3px solid #1c7ed6;
+}
+
+/* 3. Menyu havolalari */
+nav a {
+  color: #5f3dc4;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+/* 4. Klass va id */
+.muhim {
+  background-color: #fff3bf;
+  font-weight: bold;
+}
+
+#orzu {
+  font-style: italic;
+  color: #e64980;
+}

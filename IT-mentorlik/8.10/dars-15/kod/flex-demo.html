@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox demo</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .ota {
+      display: flex;
+      /* ↓↓↓ Shu qiymatlarni o'zgartirib ko'ring ↓↓↓ */
+      flex-direction: row;          /* row | column */
+      justify-content: space-between; /* flex-start | center | flex-end | space-between | space-around */
+      align-items: center;          /* stretch | flex-start | center | flex-end */
+      gap: 10px;
+      height: 250px;
+      background: #e7f5ff;
+      border: 3px dashed #1c7ed6;
+    }
+    .bola { width: 80px; padding: 20px; background: #1c7ed6; color: white; font-size: 24px; text-align: center; border-radius: 10px; }
+    .bola:nth-child(2) { padding: 40px 20px; }
+
+    /* Navbar namunasi */
+    nav { display: flex; justify-content: space-between; align-items: center; margin-top: 30px; padding: 15px 30px; background: #212529; border-radius: 10px; }
+    nav .logo { color: #ffd43b; font-weight: bold; font-size: 22px; }
+    nav ul { display: flex; gap: 25px; list-style: none; margin: 0; padding: 0; }
+    nav a { color: white; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="ota">
+    <div class="bola">1</div>
+    <div class="bola">2</div>
+    <div class="bola">3</div>
+  </div>
+
+  <nav>
+    <span class="logo">AzizDev</span>
+    <ul>
+      <li><a href="#">Bosh sahifa</a></li>
+      <li><a href="#">Loyihalar</a></li>
+      <li><a href="#">Aloqa</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
