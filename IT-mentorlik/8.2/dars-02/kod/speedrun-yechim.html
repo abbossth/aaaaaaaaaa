@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed-run — Aziz</title>
+</head>
+<body>
+  <header>
+    <strong>AzizDev</strong>
+    <nav>
+      <a href="#about">Men haqimda</a>
+      <a href="#jadval">Jadval</a>
+      <a href="#forma">Ro'yxatdan o'tish</a>
+      <a href="#sevimli">Sevimlilar</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Aziz Karimovning sahifasi</h1>
+
+    <section id="about">
+      <h2>Men haqimda</h2>
+      <img src="https://picsum.photos/200" alt="Mening rasmim">
+      <p>Men <strong>8-sinf</strong> o'quvchisiman va <em>full-stack dasturchi</em> bo'lmoqchiman.</p>
+    </section>
+
+    <section id="jadval">
+      <h2>Dars jadvalim</h2>
+      <table border="1">
+        <thead>
+          <tr><th>Kun</th><th>1-dars</th><th>2-dars</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Dushanba</td><td>Matematika</td><td>Ona tili</td></tr>
+          <tr><td>Seshanba</td><td>Ingliz tili</td><td>Fizika</td></tr>
+          <tr><td>Chorshanba</td><td>IT</td><td>Tarix</td></tr>
+          <tr><td>Payshanba</td><td>Kimyo</td><td>Algebra</td></tr>
+          <tr><td>Juma</td><td>Biologiya</td><td>Jismoniy tarbiya</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="forma">
+      <h2>Ro'yxatdan o'tish</h2>
+      <form>
+        <label for="ism">Ism</label>
+        <input type="text" id="ism" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="parol">Parol</label>
+        <input type="password" id="parol">
+
+        <label for="sana">Tug'ilgan sana</label>
+        <input type="date" id="sana">
+
+        <p>Jins:</p>
+        <input type="radio" id="ogil" name="jins"><label for="ogil">O'g'il</label>
+        <input type="radio" id="qiz" name="jins"><label for="qiz">Qiz</label>
+
+        <label for="sinf">Sinf</label>
+        <select id="sinf">
+          <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
+        </select>
+
+        <p>Qiziqishlar:</p>
+        <input type="checkbox" id="q1"><label for="q1">Dasturlash</label>
+        <input type="checkbox" id="q2"><label for="q2">Dizayn</label>
+        <input type="checkbox" id="q3"><label for="q3">O'yinlar</label>
+
+        <label for="izoh">Izoh</label>
+        <textarea id="izoh" rows="3"></textarea>
+
+        <button type="submit">Yuborish</button>
+      </form>
+    </section>
+
+    <section id="sevimli">
+      <h2>Sevimlilarim</h2>
+      <article>
+        <h3>Film: Interstellar</h3>
+        <img src="https://picsum.photos/150?1" alt="Film rasmi">
+        <p>Koinot va vaqt haqidagi ajoyib film.</p>
+      </article>
+      <article>
+        <h3>O'yin: Minecraft</h3>
+        <img src="https://picsum.photos/150?2" alt="O'yin rasmi">
+        <p>Istalgan narsani qurish mumkin.</p>
+      </article>
+      <article>
+        <h3>Kitob: O'tkan kunlar</h3>
+        <img src="https://picsum.photos/150?3" alt="Kitob rasmi">
+        <p>Abdulla Qodiriyning mashhur romani.</p>
+      </article>
+      <iframe width="400" height="225" src="https://www.youtube.com/embed/UB1O30fR-EE" title="HTML crash course" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>© 2026 AzizDev</footer>
+</body>
+</html>
