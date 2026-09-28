@@ -1,0 +1,3 @@
+aiogram>=3.13
+asyncpg>=0.29
+python-dotenv>=1.0
