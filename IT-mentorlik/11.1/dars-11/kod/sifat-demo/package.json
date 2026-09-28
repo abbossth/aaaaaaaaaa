@@ -1,0 +1,19 @@
+{
+  "name": "sifat-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "vitest": "^2.0.5"
+  }
+}
