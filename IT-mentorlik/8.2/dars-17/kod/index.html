@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM — mahsulotlar</title>
+  <style>
+    body { font-family: system-ui; max-width: 900px; margin: 0 auto; padding: 20px; transition: 0.3s; }
+    body.qorongi { background: #212529; color: #f1f3f5; }
+    .galereya { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+    .karta { border: 1px solid #dee2e6; border-radius: 12px; padding: 16px; }
+    .karta.chegirma { border-color: #fa5252; }
+    .narx { font-weight: bold; color: #7048e8; }
+  </style>
+</head>
+<body>
+  <h1 id="sarlavha">Mahsulotlar</h1>
+  <p id="soni"></p>
+  <div class="galereya" id="galereya"></div>
+  <script src="app.js"></script>
+</body>
+</html>
