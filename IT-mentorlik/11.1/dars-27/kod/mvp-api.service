@@ -1,0 +1,18 @@
+[Unit]
+Description=Startap MVP API (Express)
+After=network.target
+
+[Service]
+Type=simple
+User=deploy
+WorkingDirectory=/opt/mvp/server
+ExecStart=/usr/bin/node src/index.js
+Restart=always
+RestartSec=3
+Environment=NODE_ENV=production
+Environment=PORT=3000
+# Maxfiy o'zgaruvchilar alohida faylda (chmod 600):
+EnvironmentFile=-/opt/mvp/server/.env
+
+[Install]
+WantedBy=multi-user.target

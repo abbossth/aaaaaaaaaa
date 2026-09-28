@@ -1,0 +1,7 @@
+{
+  "name": "server",
+  "type": "module",
+  "scripts": { "dev": "node --watch src/index.js", "start": "node src/index.js", "test": "vitest run" },
+  "dependencies": { "express": "^4.19.2" },
+  "devDependencies": { "supertest": "^7.0.0", "vitest": "^2.0.5" }
+}
