@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid demo</title>
+  <style>
+    body { font-family: system-ui; margin: 0; padding: 20px; background: #212529; color: white; }
+    .galereya {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .galereya img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; display: block; }
+    .katta { grid-column: span 2; grid-row: span 2; }
+    .keng { grid-column: span 2; }
+    @media (max-width: 500px) {
+      .katta, .keng { grid-column: span 1; grid-row: span 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>📸 Foto-galereya</h1>
+  <div class="galereya">
+    <img class="katta" src="https://picsum.photos/600/600?1" alt="1">
+    <img src="https://picsum.photos/300/300?2" alt="2">
+    <img src="https://picsum.photos/300/300?3" alt="3">
+    <img src="https://picsum.photos/300/300?4" alt="4">
+    <img src="https://picsum.photos/300/300?5" alt="5">
+    <img class="keng" src="https://picsum.photos/600/300?6" alt="6">
+    <img src="https://picsum.photos/300/300?7" alt="7">
+    <img src="https://picsum.photos/300/300?8" alt="8">
+  </div>
+</body>
+</html>

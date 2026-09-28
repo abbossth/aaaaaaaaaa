@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo va Position</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui; margin: 0; }
+
+    header { position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; padding: 15px 30px; background: #1c7ed6; color: white; }
+    header a { color: white; text-decoration: none; margin-left: 20px; }
+    header a:hover { text-decoration: underline; }
+
+    main { max-width: 800px; margin: 0 auto; padding: 20px; }
+    h2::after { content: ""; display: block; width: 60px; height: 4px; background: #1c7ed6; margin-top: 6px; border-radius: 2px; }
+
+    .tugma { padding: 12px 24px; background: #7048e8; color: white; border: 0; border-radius: 10px; cursor: pointer; transition: 0.2s; }
+    .tugma:hover { background: #5f3dc4; transform: translateY(-2px); }
+    .tugma:active { transform: scale(0.95); }
+
+    input { padding: 10px; border: 2px solid #ced4da; border-radius: 8px; }
+    input:focus { outline: none; border-color: #7048e8; }
+
+    table { border-collapse: collapse; width: 100%; }
+    td { padding: 10px; border-bottom: 1px solid #dee2e6; }
+    tr:nth-child(even) { background: #f8f9fa; }
+    tr:hover { background: #e7f5ff; }
+
+    .karta { position: relative; width: 250px; padding: 20px; background: #f1f3f5; border-radius: 12px; }
+    .yorliq { position: absolute; top: -10px; right: -10px; background: #fa5252; color: white; padding: 6px 10px; border-radius: 20px; font-size: 12px; }
+
+    .yuqoriga { position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%; background: #212529; color: white; display: grid; place-items: center; text-decoration: none; font-size: 22px; }
+
+    .uzun { height: 1200px; background: linear-gradient(#fff, #e7f5ff); }
+    ::selection { background: #ffe066; }
+  </style>
+</head>
+<body>
+  <header><strong>Logo</strong><nav><a href="#">Bosh</a><a href="#">Blog</a><a href="#">Aloqa</a></nav></header>
+  <main>
+    <h2>Tugmalar</h2>
+    <button class="tugma">Hover qiling</button>
+    <input placeholder="Bosib ko'ring...">
+
+    <h2>Zebra jadval</h2>
+    <table>
+      <tr><td>Aziz</td><td>95</td></tr><tr><td>Malika</td><td>98</td></tr>
+      <tr><td>Bobur</td><td>87</td></tr><tr><td>Dilnoza</td><td>91</td></tr>
+    </table>
+
+    <h2>Yorliqli kartochka</h2>
+    <div class="karta"><span class="yorliq">-20%</span>Chegirmali mahsulot</div>
+
+    <div class="uzun"><p>Pastga aylantiring — menyu tepada yopishib qoladi, ↑ tugmasi esa joyida turadi.</p></div>
+  </main>
+  <a class="yuqoriga" href="#">↑</a>
+</body>
+</html>
